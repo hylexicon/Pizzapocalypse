@@ -1,0 +1,9 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://bcnt621t5hkrl"]
+
+[ext_resource type="Script" uid="uid://dvgg1mcraiodq" path="res://scripts/Item.cs" id="1_0kfin"]
+
+[resource]
+script = ExtResource("1_0kfin")
+Name = "Pizza"
+Description = "A plain cheese pizza."
+Value = 4

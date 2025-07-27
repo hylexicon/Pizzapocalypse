@@ -1,19 +1,14 @@
 using Godot;
+using Godot.Collections;
 using System;
-using System.Collections.Generic;
 
 public partial class Character : CharacterBody2D
 {
     [Export]
-    protected int WalkSpeed = 1;
+    protected Stats stats;
 
     [Export]
-    protected int RunSpeed = 10;
-
-    [Export]
-    protected int Health = 100;
-
-    private readonly List<Item> inventory = [];
+    protected Array<Item> inventory = [];
 
     public void AddItem(Item item)
     {
