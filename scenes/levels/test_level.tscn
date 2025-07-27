@@ -1,7 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://btqt6kvbbr8ph"]
+[gd_scene load_steps=3 format=3 uid="uid://btqt6kvbbr8ph"]
 
 [ext_resource type="PackedScene" uid="uid://cpqked7rt1op4" path="res://scenes/entities/player.tscn" id="1_jbqir"]
+[ext_resource type="PackedScene" uid="uid://byfktby2mlyef" path="res://scenes/game_manager.tscn" id="1_yautc"]
 
 [node name="TestLevel" type="Node2D"]
+
+[node name="GameManager" parent="." instance=ExtResource("1_yautc")]
 
 [node name="Player" parent="." instance=ExtResource("1_jbqir")]
