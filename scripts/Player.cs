@@ -8,7 +8,7 @@ public partial class Player : Character
 		base._PhysicsProcess(delta);
 
 		bool running = Input.IsActionPressed("run");
-		int speed = running? RunSpeed : WalkSpeed;
+		int speed = running? stats.RunSpeed : stats.WalkSpeed;
 		Vector2 inputDirection = Input.GetVector("left", "right", "up", "down");
 		Velocity = speed * inputDirection;
 

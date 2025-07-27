@@ -1,11 +1,14 @@
 using Godot;
 using System;
 
-public partial class Item : Node
+public partial class Item : Resource
 {
     [Export]
-    private string name;
+    public string Name;
 
     [Export]
-    private int value;
+    public string Description;
+
+    [Export]
+    public int Value;
 }
