@@ -1,10 +1,19 @@
-[gd_scene load_steps=3 format=3 uid="uid://btqt6kvbbr8ph"]
+[gd_scene load_steps=6 format=3 uid="uid://btqt6kvbbr8ph"]
 
 [ext_resource type="PackedScene" uid="uid://cpqked7rt1op4" path="res://scenes/entities/player.tscn" id="1_jbqir"]
 [ext_resource type="PackedScene" uid="uid://byfktby2mlyef" path="res://scenes/game_manager.tscn" id="1_yautc"]
+[ext_resource type="Script" uid="uid://dvgg1mcraiodq" path="res://scripts/Item.cs" id="3_48ne7"]
+[ext_resource type="PackedScene" uid="uid://dwpddw1x506es" path="res://scenes/objects/delivery_zone.tscn" id="3_fr1um"]
+[ext_resource type="Resource" uid="uid://bcnt621t5hkrl" path="res://resources/items/pizza.tres" id="4_6xh4u"]
 
 [node name="TestLevel" type="Node2D"]
 
 [node name="GameManager" parent="." instance=ExtResource("1_yautc")]
+unique_name_in_owner = true
 
 [node name="Player" parent="." instance=ExtResource("1_jbqir")]
+inventory = Array[ExtResource("3_48ne7")]([ExtResource("4_6xh4u")])
+
+[node name="Delivery Zone" parent="." instance=ExtResource("3_fr1um")]
+position = Vector2(300, 0)
+collision_mask = 2
