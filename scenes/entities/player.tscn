@@ -8,6 +8,8 @@
 size = Vector2(120, 120)
 
 [node name="Player" type="CharacterBody2D"]
+z_index = 5
+collision_layer = 2
 script = ExtResource("1_08t41")
 stats = ExtResource("2_1ie0h")
 
